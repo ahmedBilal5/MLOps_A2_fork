@@ -7,7 +7,7 @@ import pandas as pd
 regressor = None
 labels = []
 data = []
-#a comment
+#a comment edited
 app = Flask(__name__)
 
 
