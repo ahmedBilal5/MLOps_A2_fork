@@ -1,7 +1,7 @@
   name: Black Formatter
   
   on:
-    pull_request:
+    push:
       branches: ${{ github.ref.name }} 
       
   jobs:
