@@ -1,0 +1,15 @@
+  name: Black Formatter
+  
+  on:
+    push:
+      branches: main
+      
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+      - name: Echoing the current branch
+        run: |
+          echo ${env.BRANCH_NAME}
+        env:
+          BRANCH_NAME: ${ GITHUB_REF_NAME }
