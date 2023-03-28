@@ -1,8 +1,9 @@
-  name: Black Formatter
+  name: Test Workflow
   
   on:
     push:
-      branches: main
+      branches: ${{env.BRANCH_NAME}}
+      
       
   jobs:
     build:
