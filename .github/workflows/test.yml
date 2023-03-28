@@ -10,6 +10,6 @@
       steps:
       - name: Echoing the current branch
         run: |
-          echo ${env.BRANCH_NAME}
+          echo ${{env.BRANCH_NAME}}
         env:
-          BRANCH_NAME: ${ GITHUB_REF_NAME }
+          BRANCH_NAME: ${{ github.ref_name }}
