@@ -2,7 +2,7 @@
   
   on:
     push:
-      branches: ${{ github.ref.name }} 
+      branches: main
       
   jobs:
     build:
